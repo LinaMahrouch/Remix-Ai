@@ -1,9 +1,11 @@
 import type { MetaFunction } from "@vercel/remix";
-import About from "~/components/About";
+//import About from "~/components/About";
 import Footer from "~/components/Footer";
 import Hero from "~/components/Hero";
 import Navbar from "~/components/Navbar/Index";
 import Testimonial from "~/components/Testimonial";
+import AboutUs from '~/components/AboutUs'
+
 
 export const meta: MetaFunction = () => {
   return [
@@ -12,14 +14,18 @@ export const meta: MetaFunction = () => {
   ];
 };
 
+
+
 export default function Index() {
   return (
     <>
-      <Hero />
+      
       <Navbar />
-      <About />
+      <Hero />
+      <AboutUs />
       <Testimonial />
       <Footer />
+      
     </>
   );
 }

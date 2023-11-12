@@ -1,8 +1,10 @@
 
+import GradientBackground from  '~/components/GradientBackground';
 export default function Hero() {
     return (
-        <section className="min-h-screen flex flex-col items-center justify-center bg-black text-white">
-        <main className="flex flex-col items-center justify-center min-h-screen pt-20 text-center bg-black text-white">
+      <GradientBackground>
+        <section className=" bg-black   flex flex-col items-center justify-center  text-white">
+        <main className="flex flex-col items-center justify-center min-h-screen pt-20 text-center  text-white">
           
             <h1 className="text-6xl font-bold" style={{ fontFamily: 'Orbitron, sans-serif' }}>
               Welcome to <span className="text-blue-600">Your AI App</span>
@@ -18,6 +20,7 @@ export default function Hero() {
           
         </main>
         </section>
+        </GradientBackground>
     );
   }
   

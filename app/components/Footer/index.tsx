@@ -1,15 +1,15 @@
 
 export default function Footer() {
     return (
-      <section>
+      <section className="bg-black text-white">
       <footer className="flex items-center justify-center w-full h-24 border-t border-gray-700">
         <a
           className="flex items-center justify-center"
-          href="#"
+          href="https://www.yourcompany.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by <span className="font-semibold">Your Company</span>
+          <p> Powered by<span className="font-semibold"> Your AI Company</span></p>
         </a>
       </footer>
       </section>
