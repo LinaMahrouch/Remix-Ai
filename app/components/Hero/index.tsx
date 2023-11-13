@@ -1,8 +1,8 @@
 
-import GradientBackground from  '~/components/GradientBackground';
+import { Link } from '@remix-run/react';
 export default function Hero() {
     return (
-      <GradientBackground>
+      
         <section className=" bg-black   flex flex-col items-center justify-center  text-white">
         <main className="flex flex-col items-center justify-center min-h-screen pt-20 text-center  text-white">
           
@@ -13,14 +13,14 @@ export default function Hero() {
               This is a starter template for your Remix AI app!
             </p>
            
-              <a href="#" className="px-6 py-3 bg-blue-500 rounded-md text-white font-bold hover:bg-blue-700 transition duration-300">
-                Get Started
-              </a>
+              <Link to="/" className="px-6 py-3 bg-blue-500 rounded-md text-white font-bold hover:bg-blue-700 transition duration-300">
+                Get Started</Link>
+             
            
           
         </main>
         </section>
-        </GradientBackground>
+       
     );
   }
   

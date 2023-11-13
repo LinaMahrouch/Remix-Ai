@@ -1,5 +1,7 @@
 import { useCallback, useEffect, useState } from 'react';
 import { Link } from '@remix-run/react';
+
+
 export default function Navbar() {
   const [colorChange, setColorChange] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -44,12 +46,11 @@ export default function Navbar() {
     <nav className={`fixed top-0 w-full z-50 transition duration-500 ease-in-out ${colorChange ? 'bg-gradient-to-r from-zinc-900 to-indigo-900 shadow-lg' : 'bg-transparent'}`}>
       <div className="flex items-center justify-between h-16 max-w-6xl mx-auto px-4 text-white">
         <div className="font-bold text-xl cursor-pointer">
-          Your AI App
+        <Link to="/" className="hover:text-gray-300">Your AI App</Link>
         </div>
         <div className="hidden md:flex space-x-4">
         <Link to="/" className="hover:text-gray-300">Home</Link>
           <Link to="/features" className="hover:text-gray-300">Features</Link>
-          <Link to="/about" className="hover:text-gray-300">About</Link>
           <Link to="/contact" className="hover:text-gray-300">Contact</Link>
         </div>
         <button className="md:hidden flex items-center" onClick={toggleMenu}>
@@ -60,7 +61,6 @@ export default function Navbar() {
         <div className="md:hidden">
           <Link to="/" className="block text-white hover:text-gray-300 p-2">Home</Link>
           <Link to="/features" className="block text-white hover:text-gray-300 p-2">Features</Link>
-          <Link to="/about" className="block text-white hover:text-gray-300 p-2">About</Link>
           <Link to="/contact" className="block text-white hover:text-gray-300 p-2">Contact</Link>
         </div>
          )}
