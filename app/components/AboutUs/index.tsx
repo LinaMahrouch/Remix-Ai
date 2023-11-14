@@ -22,7 +22,7 @@ const cardVariants = {
 
 const AboutUs= () => {
   return (
-<div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-tr from-zinc-900 to-black p-4 text-white">    
+<div className=" flex flex-col items-center justify-center min-h-screen bg-gradient-to-tl   from-zinc-900 to-black p-6 text-white">    
       <motion.div
         initial="offscreen"
         whileInView="onscreen"
@@ -37,23 +37,24 @@ const AboutUs= () => {
       />
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Map through your card data here later :) */}
-          <motion.div variants={cardVariants} className="bg-white p-6 sm:p-2 hover:bg-zinc-400 text-black border-black rounded-lg shadow-lg ">
+          <motion.div variants={cardVariants} className="bg-white p-4 sm:p-2 hover:bg-zinc-400 text-black border border-black rounded-lg shadow-lg ">
             {/* Card Content */}
-            <h3 className="text-lg md:text-xl font-semibold mb-2 text-blue-700">Our Mission</h3>
+            <h1 className="text-lg md:text-xl font-semibold  text-blue-700">Our Mission</h1>
+            <p>
+              To deliver exceptional service and to enrich the lives of our clients through innovative design and technology.
+              
+            </p>
+          </motion.div>
+          <motion.div variants={cardVariants} className="bg-white p-6 sm:p-4 hover:bg-zinc-400 text-black border border-black rounded-lg shadow-lg">
+            {/* Card Content */}
+            <h1 className="text-lg md:text-xl font-semibold  text-blue-700">Our Mission</h1>
             <p>
               To deliver exceptional service and to enrich the lives of our clients through innovative design and technology.
             </p>
           </motion.div>
-          <motion.div variants={cardVariants} className="bg-white p-6 sm:p-4 hover:bg-zinc-400 text-black border-black rounded-lg shadow-lg">
-            {/* Card Content */}
-            <h3 className="text-lg md:text-xl font-semibold mb-2 text-blue-700">Our Mission</h3>
-            <p>
-              To deliver exceptional service and to enrich the lives of our clients through innovative design and technology.
-            </p>
-          </motion.div>
-          <motion.div variants={cardVariants} className="bg-white hover:bg-zinc-400 text-black border-black p-6  sm:p-4 rounded-lg shadow-lg">
+          <motion.div variants={cardVariants} className="bg-white hover:bg-zinc-400 text-black border border-black p-6  sm:p-4 rounded-lg shadow-lg">
             {/* Card Content  TODO LATER dynamic cards*/}
-            <h3 className="text-lg md:text-xl font-semibold mb-2 text-blue-700">Our Mission</h3>
+            <h1 className="text-lg md:text-xl font-semibold  text-blue-700">Our Mission</h1>
             <p>
               To deliver exceptional service and to enrich the lives of our clients through innovative design and technology.
             </p>

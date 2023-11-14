@@ -1,10 +1,10 @@
-import React from 'react';
-import TestimonialCard from './TestimonialCard';
-import { motion } from 'framer-motion';
-import Title from '../Title';
-import cook from '../../../public/images/cook.png';
-import notionImg from '../../../public/images/notion-avatar.png';
-import tim from '../../../public/images/tim.png';
+import React from "react";
+import TestimonialCard from "./TestimonialCard";
+import { motion } from "framer-motion";
+import Title from "../Title";
+import cook from "../../../public/images/cook.png";
+import notionImg from "../../../public/images/notion-avatar.png";
+import suit from "../../../public/images/suit.png";
 
 interface Feedback {
   name: string;
@@ -35,43 +35,44 @@ const itemVariants = {
 const Testimonial = () => {
   const feedbacks: Feedback[] = [
     {
-      name: 'Mahrouch Lina',
-      position: 'CTO - YourMom',
+      name: "Mahrouch Lina",
+      position: "CTO - YourMom",
       img: notionImg,
-      content: 'Actually it was a good thing discovering this template.'
+      content: "Actually it was a good thing discovering this template.",
     },
     {
-      name: 'Letmi Cook',
-      position: 'CEO - Sleep Agency',
+      name: "Letmi Cook",
+      position: "CEO - Sleep Agency",
       img: cook,
-      content: 'It was a great experience using the app.'
+      content: "It was a great experience using the app.",
     },
     {
-      name: 'Tim Cook',
-      position: 'CTO - WRizz',
-      img: tim,
-      content: 'It was a great experience using the app.'
+      name: "Lee Nah",
+      position: "CTO - WRizz",
+      img: suit,
+      content: "It was a great experience using the app.",
     },
     // ...other feedbacks
   ];
 
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center  bg-gradient-to-b  from-zinc-900 to-black text-white mt-8 p-8">
+    <section className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-zinc-900 to-black text-white p-6">
       <Title
         title="Our lovely clients"
         caption="Feedbacks of some clients that tested our AI App"
       />
+      {/* Restrict the max-width of the container */}
       <motion.div
-        className="max-w-screen-xl mx-auto"
+        className=" mx-auto"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
       >
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-center py-8 hover:scale-100">
+   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center items-center">
           {feedbacks.map((feedback, index) => (
             <motion.div
               key={feedback.name} // It's better to use unique keys, if possible
-              className="flex flex-col h-full bg-zinc-800 rounded-lg p-4 justify-between shadow-md "
+              className="flex flex-col h-full rounded-lg shadow-md"
               variants={itemVariants}
             >
               <TestimonialCard feedback={feedback} />

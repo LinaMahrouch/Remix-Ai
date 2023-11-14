@@ -15,20 +15,17 @@ interface TestimonialCardProps {
 const TestimonialCard = ({ feedback }: TestimonialCardProps) => {
   return (
     
-    <div className="card flex flex-col items-center border border-gray-500 gap-6 w-full max-w-xs mx-auto shadow-lg rounded-xl p-4 h-full transition-transform duration-300 hover:scale-105 hover:shadow-2xl  ">
-    <div className="avatar-container   border-white rounded-full overflow-hidden">
-      <img
-        src={feedback.img}
-        alt={feedback.name}
-        style={{ objectFit: "cover" }}
-        className="object-cover w-12 h-12 border border-light rounded-full    "
-      />
+    
+    <div className="flex flex-col items-center text-center bg-zinc-900 border border-zinc-500 rounded-lg p-4 shadow-md h-full hover:bg-zinc-800">
+    {/* Hide image on small screens */}
+    <div className={`w-24 h-24 mb-4 ${feedback.img ? 'sm:block hidden' : ''}`}>
+      {feedback.img && (
+        <img src={feedback.img} alt={`${feedback.name}`} className="rounded-full" />
+      )}
     </div>
-    <div className="text-center">
-      <p className="font-bold text-lg text-gray-300">{feedback.name}</p>
-      <p className="text-blue-300 text-sm">{feedback.position}</p>
-      <p className="text-gray-300 mt-2">{feedback.content}</p>
-    </div>
+    <h1 className="text-lg font-semibold ">{feedback.name}</h1>
+    <p className="text-sm text-indigo-700">{feedback.position}</p>
+    <p className="mt-3 overflow-hidden">{feedback.content}</p>
   </div>
       
   

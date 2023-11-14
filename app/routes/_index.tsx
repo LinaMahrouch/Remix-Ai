@@ -4,6 +4,7 @@ import Footer from "~/components/Footer";
 import Hero from "~/components/Hero";
 import Testimonial from "~/components/Testimonial";
 import AboutUs from '~/components/AboutUs'
+import PricingSection from "~/components/PricingSection";
 
 
 export const meta: MetaFunction = () => {
@@ -26,10 +27,17 @@ export default function Index() {
     <div className="snap-start h-screen">
       <AboutUs />
     </div>
+   
     <div className="snap-start">
       <Testimonial />
-      <Footer/>
     </div>
+    <div className="snap-start">
+      <PricingSection />
+      <Footer/>
+      </div>
+     
+    
+    
    
   </div>
   </div>

@@ -21,18 +21,16 @@ export default function Navbar() {
         <div className="hidden md:flex md:space-x-8">
         <Link to="/" className="hover:text-gray-300">Home</Link>
           <Link to="/features" className="hover:text-gray-300">Features</Link>
-          <Link to="/contact" className="hover:text-gray-300">Contact</Link>
+          
         </div>
         <button className="md:hidden flex items-center" onClick={toggleMenu}>
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
         </button>
       </div>
       {isMenuOpen && (
-        <div className="md:hidden absolute bg-black w-full">
+        <div className="md:hidden absolute  ">
           <Link to="/" className="block text-white hover:text-gray-300 p-2">Home</Link>
           <Link to="/features" className="block text-white hover:text-gray-300 p-2">Features</Link>
-
-          <Link to="/contact" className="block text-white hover:text-gray-300 p-2">Contact</Link>
         </div>
          )}
     </nav>
