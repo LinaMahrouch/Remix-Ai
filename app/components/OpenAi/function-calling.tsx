@@ -34,8 +34,7 @@ export default function Chat() {
   };
 
   const { messages, input, handleInputChange, handleSubmit } = useChat({
-    api: '/features
-    /chat-with-functions',
+    api: '/features/chat-with-functions',
     experimental_onFunctionCall: functionCallHandler,
   });
 

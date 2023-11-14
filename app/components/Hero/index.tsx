@@ -3,7 +3,7 @@ import { Link } from '@remix-run/react';
 export default function Hero() {
     return (
       
-        <section className=" bg-black   flex flex-col items-center justify-center  text-white">
+        <section className="  bg-gradient-to-bl from-zinc-900 to-black   flex flex-col items-center justify-center  text-white ">
         <main className="flex flex-col items-center justify-center min-h-screen pt-20 text-center  text-white">
           
             <h1 className="text-6xl font-bold" style={{ fontFamily: 'Orbitron, sans-serif' }}>
@@ -22,5 +22,5 @@ export default function Hero() {
         </section>
        
     );
-  }
+  } 
   

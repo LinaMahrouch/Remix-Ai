@@ -18,7 +18,7 @@ export default function Features() {
   return (
     <>
       
-      <main className="flex flex-col items-center justify-center w-full h-screen rounded-lg bg-black p-4">
+      <main className="flex flex-col items-center justify-center w-full h-screen rounded-lg bg-gradient-to-b from-black to-zinc-900 p-4">
       <div className="w-full max-w-md bg-white  rounded-lg shadow-xl">
         <h2 className="text-3xl font-semibold text-center p-4 border-b border-gray-200">AI Chat Experience</h2>
         <section className="flex flex-col p-4 space-y-4 overflow-auto" style={{ maxHeight: '50vh' }}>

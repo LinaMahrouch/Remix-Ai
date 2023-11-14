@@ -56,7 +56,7 @@ const Testimonial = () => {
   ];
 
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center bg-black text-white p-8">
+    <section className="min-h-screen flex flex-col items-center justify-center  bg-gradient-to-b  from-zinc-900 to-black text-white mt-8 p-8">
       <Title
         title="Our lovely clients"
         caption="Feedbacks of some clients that tested our AI App"

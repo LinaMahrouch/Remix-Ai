@@ -2,7 +2,6 @@ import type { MetaFunction } from "@vercel/remix";
 //import About from "~/components/About";
 import Footer from "~/components/Footer";
 import Hero from "~/components/Hero";
-import Navbar from "~/components/Navbar/Index";
 import Testimonial from "~/components/Testimonial";
 import AboutUs from '~/components/AboutUs'
 
@@ -18,14 +17,23 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <>
-      
-      <Navbar />
+    
+      <div>
+    <div className="snap-y snap-mandatory overflow-y-auto h-screen">
+    <div className="snap-start h-screen">
       <Hero />
+    </div>
+    <div className="snap-start h-screen">
       <AboutUs />
+    </div>
+    <div className="snap-start">
       <Testimonial />
-      <Footer />
+      <Footer/>
+    </div>
+   
+  </div>
+  </div>
       
-    </>
+    
   );
 }
