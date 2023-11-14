@@ -10,7 +10,12 @@ export default {
       
       fontFamily: {
         'orbitron': ['Orbitron', 'sans-serif']
-      }
+      },
+      colors: {
+        'gay-gray': '#2d2d2d',
+        'cute-black':"#181818",
+      },
+
     },
   },
   plugins: [],
