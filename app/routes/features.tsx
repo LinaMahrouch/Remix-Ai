@@ -34,10 +34,10 @@ export default function Features() {
         </div>
       ))}
     </section>
-    <form onSubmit={handleSubmit} className="flex w-full text-black  border-gay-gray rounded-lg">
+    <form onSubmit={handleSubmit} className="flex w-full h-12 text-black  border-gay-gray rounded-lg">
       <input
         type="text"
-        className="flex-grow p-4 text-lg rounded-l-lg "
+        className="w-full h-12 px-4 text-lg rounded-lg "
         value={input}
         placeholder="Type your message here..."
         onChange={handleInputChange}
@@ -46,7 +46,7 @@ export default function Features() {
       />
       <button
         type="submit"
-        className="px-4 text-base md:text-lg font-bold text-white bg-zinc-900 rounded-lg hover:bg-zinc-800 focus:outline-none focus:ring-1 focus:ring-zinc-400 focus:ring-offset-2 "
+        className="w-auto px-4  text-base md:text-lg font-bold text-white bg-zinc-900 rounded-lg hover:bg-zinc-800 focus:outline-none focus:ring-1 focus:ring-zinc-400 focus:ring-offset-2 "
       >
         Send
       </button>
