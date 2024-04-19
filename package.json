@@ -15,7 +15,6 @@
   "dependencies": {
     "@heroicons/react": "^2.0.18",
     "@nanostores/react": "github:ai/react",
-    "@remix-run/css-bundle": "^2.0.0",
     "@remix-run/node": "^2.0.0",
     "@remix-run/react": "^2.0.0",
     "@remix-run/serve": "^2.0.0",
@@ -31,18 +30,22 @@
     "react-intersection-observer": "^9.5.3"
   },
   "devDependencies": {
-    "@remix-run/dev": "^2.0.0",
-    "@remix-run/eslint-config": "^2.0.0",
+    "@remix-run/dev": "^2.8.1",
+    "@remix-run/eslint-config": "^2.8.1",
+    "@remix-run/serve": "^2.8.1",
     "@types/node": "^20.9.0",
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
-    "eslint": "^8.38.0",
+    "autoprefixer": "^10.4.18",
+    "eslint": "^8.53.0",
     "eslint-config-prettier": "^9.0.0",
     "husky": "^8.0.3",
     "lint-staged": "^15.1.0",
     "prettier": "3.1.0",
     "tailwindcss": "^3.3.5",
-    "typescript": "^5.1.6"
+    "typescript": "^5.1.6",
+    "vite": "^5.1.5",
+    "vite-tsconfig-paths": "^4.3.2"
   },
   "engines": {
     "node": ">=18.0.0"
