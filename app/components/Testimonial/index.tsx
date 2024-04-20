@@ -2,9 +2,9 @@ import React from "react";
 import TestimonialCard from "./TestimonialCard";
 import { motion } from "framer-motion";
 import Title from "../Title";
-import cook from "../../../public/images/cook.png";
-import notionImg from "../../../public/images/notion-avatar.png";
-import suit from "../../../public/images/suit.png";
+import cook from "/images/cook.png";
+import notionImg from "/images/notion-avatar.png";
+import suit from "/images/suit.png?url";
 
 interface Feedback {
   name: string;

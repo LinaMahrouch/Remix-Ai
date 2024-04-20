@@ -4,13 +4,10 @@
   "sideEffects": false,
   "type": "module",
   "scripts": {
-    "build": "remix build",
-    "dev": "remix dev --manual",
-    "start": "remix-serve ./build/index.js",
-    "typecheck": "tsc",
-    "lint": "eslint . --fix --max-warnings=0",
-    "format": "prettier . --write",
-    "prepare": "husky install"
+    "dev": "remix vite:dev",
+    "build": "remix vite:build",
+    "start": "remix-serve ./build/server/index.js",
+    "typecheck": "tsc"
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
@@ -20,6 +17,7 @@
     "@remix-run/serve": "^2.0.0",
     "@vercel/analytics": "^1.1.1",
     "@vercel/remix": "^2.8.1-patch.2",
+    "@vercel/node": "^3.0.22",
     "ai": "2.2.13",
     "framer-motion": "^10.16.4",
     "isbot": "^3.6.8",

@@ -10,7 +10,6 @@ import PricingSection from "~/components/PricingSection";
 export const meta: MetaFunction = () => {
   return [
     { title: "Your Remix AI APP" },
-    //{ name: "description", content: "Welcome to Remix!" },
   ];
 };
 
