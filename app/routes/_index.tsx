@@ -1,10 +1,10 @@
 import type { MetaFunction } from "@vercel/remix";
-//import About from "~/components/About";
-import Footer from "~/components/Footer";
-import Hero from "~/components/Hero";
-import Testimonial from "~/components/Testimonial";
-import AboutUs from '~/components/AboutUs'
-import PricingSection from "~/components/PricingSection";
+import Footer from "../components/Footer";
+import Hero from "../components/Hero";
+import Testimonial from "../components/Testimonial";
+import AboutUs from '../components/AboutUs'
+import PricingSection from "../components/PricingSection";
+import React from "react";
 
 
 export const meta: MetaFunction = () => {

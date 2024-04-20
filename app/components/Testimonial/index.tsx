@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Title from "../Title";
 import cook from "/images/cook.png";
 import notionImg from "/images/notion-avatar.png";
-import suit from "/images/suit.png?url";
+import suit from "/images/suit.png";
 
 interface Feedback {
   name: string;

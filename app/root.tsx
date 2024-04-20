@@ -9,6 +9,7 @@ import {
 //import { Analytics } from "@vercel/analytics/react";
 import type { LinksFunction } from "@vercel/remix";
 import Navbar from "./components/Navbar/Index";
+import React from "react";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },

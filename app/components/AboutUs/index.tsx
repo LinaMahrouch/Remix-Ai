@@ -1,4 +1,3 @@
-// AboutUs.tsx
 import { motion } from 'framer-motion';
 import React from 'react';
 import Title from '../Title';

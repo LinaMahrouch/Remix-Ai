@@ -2,6 +2,7 @@ import { useChat } from 'ai/react';
 import type { Message } from 'ai/react';
 import type { FunctionCallHandler } from 'ai';
 import { nanoid } from 'ai';
+import React from 'react';
 
 export default function Chat() {
   const functionCallHandler: FunctionCallHandler = async (
