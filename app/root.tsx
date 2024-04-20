@@ -1,8 +1,6 @@
-//import { cssBundleHref } from "@remix-run/css-bundle";
-import stylesheet from "~/tailwind.css";
+import stylesheet from "./tailwind.css?url";
 import {
   Links,
-  LiveReload,
   Meta,
   Outlet,
   Scripts,
@@ -30,7 +28,6 @@ export default function App() {
         <Outlet />
         <ScrollRestoration />
         <Scripts />
-        <LiveReload />
         {/* <Analytics /> */}
       </body>
     </html>
