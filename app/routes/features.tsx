@@ -8,7 +8,6 @@ import ChatUI from "../components/ChatUi";
 export const meta: MetaFunction = () => {
   return [
     { title: "Your Remix AI APP" },
-    //{ name: "description", content: "Welcome to Remix!" },
   ];
 };
 

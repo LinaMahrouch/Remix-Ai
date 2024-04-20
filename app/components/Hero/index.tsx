@@ -2,6 +2,7 @@
 import { Link } from '@remix-run/react';
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import React from 'react';
 export default function Hero() {
   const phrases = ["App", "SaaS 🚀"];
   const [[phrase, direction], setPhrase] = useState([0, 1]);
