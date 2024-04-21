@@ -21,8 +21,7 @@ export default function Navbar() {
         </div>
         <div className="hidden md:flex md:space-x-8">
         <Link to="/" className="hover:text-gray-300">Home</Link>
-          <Link to="/features" className="hover:text-gray-300">Features</Link>
-          <Link to="/signin" className="hover:text-gray-300">Login</Link>
+          <Link to="/signin" className="hover:text-gray-300">Sign In</Link>
 
           
         </div>
@@ -33,8 +32,8 @@ export default function Navbar() {
       {isMenuOpen && (
         <div className="md:hidden absolute  ">
           <Link to="/" className="block text-white hover:text-gray-300 p-2">Home</Link>
-          <Link to="/features" className="block text-white hover:text-gray-300 p-2">Features</Link>
-          <Link to="/login" className="block text-white hover:text-gray-300 p-2">Login</Link>
+          {/* <Link to="/features" className="block text-white hover:text-gray-300 p-2">Features</Link> */}
+          <Link to="/login" className="block text-white hover:text-gray-300 p-2">Sign In</Link>
         </div>
          )}
     </nav>
