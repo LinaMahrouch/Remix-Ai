@@ -22,7 +22,7 @@ export default function Navbar() {
         <div className="hidden md:flex md:space-x-8">
         <Link to="/" className="hover:text-gray-300">Home</Link>
           <Link to="/features" className="hover:text-gray-300">Features</Link>
-          <Link to="/login" className="hover:text-gray-300">Login</Link>
+          <Link to="/signin" className="hover:text-gray-300">Login</Link>
 
           
         </div>

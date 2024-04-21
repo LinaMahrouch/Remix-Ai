@@ -38,7 +38,7 @@ export default function Hero() {
               This is a starter template for your Remix AI app!
             </p>
            
-              <Link to="/" className="mt-10 px-6 py-3 lg:px-8 lg:py-3 bg-blue-600 rounded-lg text-white font-semibold hover:bg-blue-800 transition duration-300">
+              <Link to="/signin" className="mt-10 px-6 py-3 lg:px-8 lg:py-3 bg-blue-600 rounded-lg text-white font-semibold hover:bg-blue-800 transition duration-300">
                 Get Started</Link>
         </main>
         </section>

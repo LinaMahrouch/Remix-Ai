@@ -16,7 +16,6 @@ export default function Chat() {
           functionCall.arguments,
         );
         // WARNING: Do NOT do this in real-world applications!
-        // eslint-disable-next-line no-eval
         eval(parsedFunctionCallArguments.code);
         const functionResponse = {
           messages: [
@@ -51,17 +50,17 @@ export default function Chat() {
     <div className="flex flex-col w-full max-w-md py-24 mx-auto stretch">
       {messages.length > 0
         ? messages.map((m: Message) => (
-            <div
-              key={m.id}
-              className="whitespace-pre-wrap"
-              style={{ color: roleToColorMap[m.role] }}
-            >
-              <strong>{`${m.role}: `}</strong>
-              {m.content || JSON.stringify(m.function_call)}
-              <br />
-              <br />
-            </div>
-          ))
+          <div
+            key={m.id}
+            className="whitespace-pre-wrap"
+            style={{ color: roleToColorMap[m.role] }}
+          >
+            <strong>{`${m.role}: `}</strong>
+            {m.content || JSON.stringify(m.function_call)}
+            <br />
+            <br />
+          </div>
+        ))
         : null}
       <div id="chart-goes-here"></div>
       <form onSubmit={handleSubmit}>

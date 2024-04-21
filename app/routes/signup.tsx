@@ -1,6 +1,6 @@
 import { ActionFunctionArgs, json } from "@remix-run/node";
 import { Form } from "@remix-run/react";
-import Login from "~/components/Login";
+import Login from "~/components/LoginUi";
 import { createClient } from "~/utils/supabase.server";
 
 export async function action({ request }: ActionFunctionArgs) {
