@@ -1,10 +1,12 @@
-import type { MetaFunction } from "@vercel/remix";
+import type { LoaderFunctionArgs, MetaFunction } from "@vercel/remix";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Testimonial from "../components/Testimonial";
 import AboutUs from '../components/AboutUs'
 import PricingSection from "../components/PricingSection";
 import React from "react";
+import { createClient } from "../utils/supabase.server";
+import { useLoaderData } from "@remix-run/react";
 
 
 export const meta: MetaFunction = () => {
@@ -13,9 +15,18 @@ export const meta: MetaFunction = () => {
   ];
 };
 
+export async function loader({ request }: LoaderFunctionArgs) {
+  const { supabase } = createClient(request);
+
+  const { data } = await supabase.auth.getSession();
+
+  return { user: data?.session?.user };
+}
 
 
 export default function Index() {
+  const { user } = useLoaderData<typeof loader>();
+
   return (
     
       <div>

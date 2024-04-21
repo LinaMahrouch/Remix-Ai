@@ -6,7 +6,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
-//import { Analytics } from "@vercel/analytics/react";
+import { Analytics } from "@vercel/analytics/react";
 import type { LinksFunction } from "@vercel/remix";
 import Navbar from "./components/Navbar/Index";
 import React from "react";
@@ -29,8 +29,8 @@ export default function App() {
         <Outlet />
         <ScrollRestoration />
         <Scripts />
-        {/* <Analytics /> */}
-      </body>
+       {/* <Analytics /> */}
+        </body>
     </html>
   );
 }

@@ -1,3 +1,4 @@
+import React from "react";
 type PricingPlanProps = {
     title: string;
     price: string;
