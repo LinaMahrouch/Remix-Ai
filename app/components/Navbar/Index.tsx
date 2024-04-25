@@ -14,7 +14,6 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 w-full mr-4 pr-4 md:pr-0 z-50 transition duration-500 ease-in-out ">
-  {/* Rest of your navbar */}
       <div className="flex items-center justify-between h-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
         <div className="font-bold text-xl cursor-pointer">
         <Link to="/" className="hover:text-gray-300">Your AI App</Link>
@@ -33,7 +32,7 @@ export default function Navbar() {
         <div className="md:hidden absolute  ">
           <Link to="/" className="block text-white hover:text-gray-300 p-2">Home</Link>
           {/* <Link to="/features" className="block text-white hover:text-gray-300 p-2">Features</Link> */}
-          <Link to="/login" className="block text-white hover:text-gray-300 p-2">Sign In</Link>
+          <Link to="/signin" className="block text-white hover:text-gray-300 p-2">Sign In</Link>
         </div>
          )}
     </nav>

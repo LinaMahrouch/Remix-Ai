@@ -9,6 +9,7 @@ import { createClient } from "../utils/supabase.server";
 import { useLoaderData } from "@remix-run/react";
 
 
+
 export const meta: MetaFunction = () => {
   return [
     { title: "Your Remix AI APP" },
@@ -28,30 +29,31 @@ export default function Index() {
   const { user } = useLoaderData<typeof loader>();
 
   return (
-    
-      <div>
-    <div className="snap-y snap-mandatory overflow-y-auto h-screen">
-    <div className="snap-start h-screen">
-      <Hero />
-    </div>
-    <div className="snap-start h-screen">
-      <AboutUs />
-    </div>
-   
-    <div className="snap-start">
-      <Testimonial />
-    </div>
-    <div className="snap-start">
-      <PricingSection />
-      <Footer/>
+
+    <div>
+      <div className="snap-y snap-mandatory overflow-y-auto h-screen">
+        <div className="snap-start h-screen">
+          <Hero />
+
+        </div>
+        <div className="snap-start h-screen">
+          <AboutUs />
+        </div>
+
+        <div className="snap-start">
+          <Testimonial />
+        </div>
+        <div className="snap-start">
+          <PricingSection />
+          <Footer />
+        </div>
+
+
+
+
       </div>
-     
-    
-    
-   
-  </div>
-  </div>
-      
-    
+    </div>
+
+
   );
 }

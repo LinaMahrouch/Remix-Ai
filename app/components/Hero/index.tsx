@@ -3,6 +3,7 @@ import { Link } from '@remix-run/react';
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import React from 'react';
+import { Button } from '../ui/button';
 export default function Hero() {
   const phrases = ["App", "SaaS 🚀"];
   const [[phrase, direction], setPhrase] = useState([0, 1]);
@@ -39,7 +40,9 @@ export default function Hero() {
             </p>
            
               <Link to="/signin" className="mt-10 px-6 py-3 lg:px-8 lg:py-3 bg-blue-600 rounded-lg text-white font-semibold hover:bg-blue-800 transition duration-300">
-                Get Started</Link>
+              <Button>Click me</Button>
+</Link>
+                
         </main>
         </section>
        
