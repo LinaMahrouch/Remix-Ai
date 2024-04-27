@@ -7,6 +7,7 @@ import PricingSection from "../components/PricingSection";
 import React from "react";
 import { createClient } from "../utils/supabase.server";
 import { useLoaderData } from "@remix-run/react";
+import { SpotlightPreview } from "~/components/Hero/hero-demo";
 
 
 
@@ -33,7 +34,7 @@ export default function Index() {
     <div>
       <div className="snap-y snap-mandatory overflow-y-auto h-screen">
         <div className="snap-start h-screen">
-          <Hero />
+          <SpotlightPreview />
         </div>
         <div className="snap-start h-screen">
           <AboutUs />

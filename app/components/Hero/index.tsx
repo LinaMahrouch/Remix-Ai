@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import React from 'react';
 import { HoverBorderGradient } from '../ui/hover-border-gradient';
 import { ArrowRight } from 'lucide-react';
+import { SpotlightPreview } from './hero-demo';
 export default function Hero() {
   const phrases = ["App", "SaaS 🚀"];
   const [[phrase, direction], setPhrase] = useState([0, 1]);
@@ -17,40 +18,17 @@ export default function Hero() {
 
   return (
 
-    <section className="bg-gradient-to-bl from-zinc-900 to-black flex flex-col items-center  justify-center  text-white ">
-      <main className="flex flex-col items-center justify-center min-h-screen pt-20 text-center  text-white">
-
-        <h1 className="text-4xl md:text-6xl font-bold lg:text-7xl" style={{ fontFamily: 'Orbitron, sans-serif' }}>
-          Welcome to <span className="text-blue-600">Your AI&nbsp;
-            <AnimatePresence mode='wait'>
-              <motion.span
-                key={phrase}
-                initial={{ y: "100%", opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                exit={{ y: "-100%", opacity: 0 }}
-                transition={{ duration: 0.3 }}
-              >
-                {phrases[phrase % phrases.length]}
-              </motion.span>
-            </AnimatePresence>
-          </span>
-        </h1>
-        <p className="mx-4 text-lg md:text-2xl lg:text-3xl font-thin mb-4 text-zinc-400">
-          This is a starter template for your Remix AI app!
-        </p>
-        <Link to="/signin">
-          <HoverBorderGradient
-            as="button"
-            containerClassName="rounded-full"
-            className="bg-black text-zinc-300 flex items-center "
-          >
-            <span>Discover More</span>
-            <ArrowRight size={14} />
-          </HoverBorderGradient>
-        </Link>
-
-      </main>
-    </section>
+    <section className="flex flex-col items-center justify-center text-white min-h-screen">
+    <main className="flex flex-col items-center justify-center text-center">
+      <SpotlightPreview />
+      <Link to="/signin" className='m-3'>
+        <HoverBorderGradient as="button" containerClassName="rounded-full" className="bg-black text-zinc-300 flex items-center p-3">
+          <span>Discover More</span>
+          <ArrowRight size={20} />
+        </HoverBorderGradient>
+      </Link>
+    </main>
+  </section>
 
   );
 }
