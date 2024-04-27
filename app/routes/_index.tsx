@@ -34,7 +34,6 @@ export default function Index() {
       <div className="snap-y snap-mandatory overflow-y-auto h-screen">
         <div className="snap-start h-screen">
           <Hero />
-
         </div>
         <div className="snap-start h-screen">
           <AboutUs />

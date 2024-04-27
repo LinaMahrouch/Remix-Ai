@@ -31,7 +31,6 @@ export default function Navbar() {
       {isMenuOpen && (
         <div className="md:hidden absolute  ">
           <Link to="/" className="block text-white hover:text-gray-300 p-2">Home</Link>
-          {/* <Link to="/features" className="block text-white hover:text-gray-300 p-2">Features</Link> */}
           <Link to="/signin" className="block text-white hover:text-gray-300 p-2">Sign In</Link>
         </div>
          )}
