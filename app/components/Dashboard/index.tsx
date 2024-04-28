@@ -15,6 +15,7 @@ import {
 
 import { Switch } from "../ui/switch"
 
+
 const notifications = [
   {
     title: "Your call has been confirmed.",
@@ -32,7 +33,7 @@ const notifications = [
 
 type CardProps = React.ComponentProps<typeof Card>
 
-export function CardDemo({ className, ...props }: CardProps) {
+export default function CardDemo({ className, ...props }: CardProps) {
   return (
     <Card className={cn("w-[380px]", className)} {...props}>
       <CardHeader>

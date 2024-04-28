@@ -16,7 +16,7 @@ export default function Navbar() {
     <nav className="fixed top-0 w-full mr-4 pr-4 md:pr-0 z-50 transition duration-500 ease-in-out ">
       <div className="flex items-center justify-between h-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
         <div className="font-bold text-xl cursor-pointer">
-        <Link to="/" className="hover:text-gray-300">Your AI App</Link>
+        <Link to="/" className="hover:text-gray-300">Remix-AI</Link>
         </div>
         <div className="hidden md:flex md:space-x-8">
         <Link to="/" className="hover:text-gray-300">Home</Link>

@@ -1,9 +1,7 @@
-"use client";
 import React, { useState, useEffect, useRef, ElementType } from "react";
 
 import { motion } from "framer-motion";
 import { cn } from "../../utils/lib/utils";
-import { LinkProps } from '@remix-run/react';
 
 
 type Direction = "TOP" | "LEFT" | "BOTTOM" | "RIGHT";
@@ -70,7 +68,7 @@ export function HoverBorderGradient({
         >
             <div
                 className={cn(
-                    "w-auto text-white z-10 bg-black px-4 py-2 rounded-[inherit]",
+                    "w-auto text-white  z-10 bg-black px-4 py-2 rounded-[inherit]",
                     className
                 )}
             >
@@ -94,7 +92,7 @@ export function HoverBorderGradient({
                 }}
                 transition={{ ease: "linear", duration: duration ?? 1 }}
             />
-            <div className="bg-black absolute z-1 flex-none inset-[2px] rounded-[100px]" />
+            <div className="bg-black absolute 0 z-1 flex-none inset-[2px] rounded-[100px]" />
         </Tag>
     );
 }

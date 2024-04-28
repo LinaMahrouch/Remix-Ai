@@ -1,7 +1,6 @@
 import { LoaderFunctionArgs } from "@vercel/remix";
 import { Form, Link, useLoaderData } from "@remix-run/react";
 import { createClient } from "../utils/supabase.server";
-import React from "react";
 
 export async function loader({ request }: LoaderFunctionArgs) {
   const { supabase } = createClient(request);
