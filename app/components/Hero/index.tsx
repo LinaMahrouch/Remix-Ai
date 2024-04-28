@@ -1,48 +1,41 @@
+import { ChevronRight } from "lucide-react";
+import { Spotlight } from "../ui/light";
+import { Link } from "@remix-run/react";
+import { HoverBorderGradient } from "../ui/hover-border-gradient";
+import { InfiniteMovingCardsDemo } from "../Stack/moving-cards-demo";
+import { InfiniteMovingCards } from "../ui/moving-cards";
+import Stack from "../Stack";
 
-import { Link } from '@remix-run/react';
-import { useEffect, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import React from 'react';
 export default function Hero() {
-  const phrases = ["App", "SaaS 🚀"];
-  const [[phrase, direction], setPhrase] = useState([0, 1]);
+  return (
+    <div>
+    <div className="h-[40rem] w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
+      <Spotlight
+        className="-top-40 left-0 md:left-60 md:-top-20"
+        fill="white"
+      />
+      <div className=" p-4 mt-60 mx-auto relative z-10  w-full ">
+        <h1 className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+          Remix-AI SaaS template
 
-  useEffect(() => {
-    const timeoutId = setTimeout(() => {
-      setPhrase([phrase + direction, direction * -1]);
-    }, 2000); // Change the phrase every 2000ms
-    return () => clearTimeout(timeoutId);
-  }, [phrase, direction]);
-  
-    return (
-      
-        <section className="bg-gradient-to-bl from-zinc-900 to-black flex flex-col items-center  justify-center  text-white ">
-        <main className="flex flex-col items-center justify-center min-h-screen pt-20 text-center  text-white">
-          
-            <h1 className="text-4xl md:text-6xl font-bold lg:text-7xl" style={{ fontFamily: 'Orbitron, sans-serif' }}>
-              Welcome to <span className="text-blue-600">Your AI&nbsp;
-            <AnimatePresence mode='wait'>
-              <motion.span
-                key={phrase}
-                initial={{ y: "100%", opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                exit={{ y: "-100%", opacity: 0 }}
-                transition={{ duration: 0.3 }}
-              >
-                {phrases[phrase % phrases.length]}
-              </motion.span>
-            </AnimatePresence>
-          </span>
-            </h1>
-            <p className="mx-4 text-lg md:text-2xl lg:text-3xl font-thin mb-4 text-zinc-400">
-              This is a starter template for your Remix AI app!
-            </p>
-           
-              <Link to="/signin" className="mt-10 px-6 py-3 lg:px-8 lg:py-3 bg-blue-600 rounded-lg text-white font-semibold hover:bg-blue-800 transition duration-300">
-                Get Started</Link>
-        </main>
-        </section>
-       
-    );
-  } 
-  
+        </h1>
+        <p className="mt-4 font-normal text-xl text-zinc-500 max-w-lg text-center mx-auto">
+          This is a starter template for you next AI SaaS with Remix
+        </p>
+        <div className="mt-3 mb-6 text-center">
+          <Link to="/signin">
+            <HoverBorderGradient as="button" containerClassName="rounded-full inline-flex items-center justify-center border-gray-400 text-zinc-300" style={{ display: 'inline-flex', alignItems: 'center' }}>
+              <span className="mr-2 p-2" style={{ display: 'inline', lineHeight: '1' }}>Discover More</span>
+              <ChevronRight size={20} style={{ display: 'inline' }} />
+            </HoverBorderGradient>
+          </Link>
+        </div>  
+             <Stack/>
+        </div>
+
+    </div>
+    </div>
+  );
+}
+
+
