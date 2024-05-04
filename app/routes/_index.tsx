@@ -4,10 +4,8 @@ import Hero from "../components/Hero";
 import Testimonial from "../components/Testimonial";
 import AboutUs from '../components/AboutUs'
 import PricingSection from "../components/PricingSection";
-import React from "react";
 import { createClient } from "../utils/supabase.server";
 import { useLoaderData } from "@remix-run/react";
-import Stack from "~/components/Stack";
 
 
 
@@ -36,9 +34,6 @@ export default function Index() {
         <div className="snap-start h-screen">
           <Hero />
         </div>
-        {/* <div className="snap-start h-screen">
-          <Stack />
-        </div> */}
         <div className="snap-start h-screen">
           <AboutUs />
         </div>
